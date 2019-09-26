@@ -1,0 +1,23 @@
+{
+  "name": "cssproject",
+  "version": "1.0.0",
+  "description": "Landing page for natours",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RohanAntony/CSSProject.git"
+  },
+  "author": "",
+  "license": "ISC", 
+  "bugs": {
+    "url": "https://github.com/RohanAntony/CSSProject/issues"
+  },
+  "homepage": "https://github.com/RohanAntony/CSSProject#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "node-sass": "^4.12.0"
+  }
+}
