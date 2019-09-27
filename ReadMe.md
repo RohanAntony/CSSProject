@@ -53,3 +53,13 @@
 - `vh` is for viewport height.
 - `vw` is for viewport width.
 - One can also use `%` and `px` directly although it is not recommended to use px directly.
+
+### Shadows
+- Set a box shadow using `box-shadow: <offset-x> <offset-y> <blur-radius> <color>`
+- Also set a text shadow using `text-shadow: <offset-x> <offset-y> <blur-radius> <color>`
+- Reducing the size and blur of shadow along with translation of an element along the y axis gives the pressed down impression.
+
+### Outlines
+- Outlines are alternatives to border as in they are not included int the width or height of a content.
+- Outlines take the same definition as border, i.e., `outline: <thickness> <type> <color>;`
+- Outlines also take an additional parameter called as outline-offset `outline-offset: <offset>;` which defines the distance between outline and the element its surrounding.

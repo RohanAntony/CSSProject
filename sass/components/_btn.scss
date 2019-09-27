@@ -7,9 +7,9 @@
         padding: 1.5rem 4rem;
         display: inline-block;
         border-radius: 10rem;
-        transition: all .2s;
+        transition: all $default-button-push-transition-time;
         position: relative;
-        font-size: 1.6rem;
+        font-size: $default-font-size;
     }
 
     &:hover {
@@ -23,7 +23,7 @@
     }
 
     &:active {
-        transform: translateY(-.1rem);
+        transform: translateY($default-button-push-translate);
         box-shadow: 0 .5rem 1rem rgba($color-black, .2)
     }
 
@@ -33,6 +33,16 @@
 
         &::after {
             background-color: $color-white;
+        }   
+
+    }
+
+    &--green {
+        background-color: $color-primary;
+        color: $color-white;
+
+        &::after {
+            background-color: $color-primary;
         }   
 
     }
@@ -47,12 +57,38 @@
         top: 0;
         left: 0;
         z-index: -1;
-        transition: all .4s;
+        transition: all $default-button-enlarge-transition-time;
     }
 
     &--animated {
         animation: moveUp 1.2s ease-in .75s;
         animation-fill-mode: backwards; /*animation 0% is set before animation is added to the object intially itself*/
+    }
+
+    &-text{
+        &:link,
+        &:visited{
+            color: $color-primary;
+            display: inline-block;
+
+            text-decoration: none;
+            border-bottom: 1px solid $color-primary;
+            padding: 3px;
+
+            font-size: $default-font-size;
+            transition: all $default-button-push-transition-time;
+        }
+
+        &:hover{
+            background-color: $color-primary;
+            color: $color-white;
+            box-shadow: 0 1rem 2rem rgba($color-black, .15);
+        }
+
+        &:active{
+            box-shadow: 0 0.5rem 1rem rgba($color-black, .15);
+            transform: translateY($default-button-push-translate);
+        }
     }
 
 }
